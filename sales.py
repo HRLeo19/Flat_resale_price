@@ -4,14 +4,13 @@ from streamlit_option_menu import option_menu
 
 import pickle as pkl
 
-with open("C:/Users/DELL XPS/Desktop/python/resale/model_XGB.pkl","rb") as files:
+with open("model_XGB.pkl","rb") as files:
     model=pkl.load(files)
-with open("C:/Users/DELL XPS/Desktop/python/resale/ordinal.pkl","rb") as files:
+with open("ordinal.pkl","rb") as files:
     ordinal=pkl.load(files)
-with open("C:/Users/DELL XPS/Desktop/python/resale/standard.pkl","rb") as files:
+with open("standard.pkl","rb") as files:
     scalar=pkl.load(files)
 
-#df=pd.read_json("C:/Users/DELL XPS/Desktop/python/resale/final.json")
 
 twn=['','ANG MO KIO', 'BEDOK', 'BISHAN', 'BUKIT BATOK', 'BUKIT MERAH',
        'BUKIT TIMAH', 'CENTRAL AREA', 'CHOA CHU KANG', 'CLEMENTI',
@@ -239,7 +238,6 @@ if selected=="Home":
         st.write(' Python, Pandas, numpy, matplotlib, seaborn, Streamlit, sklearn')
         st.write('## :red[ML Model]')
         st.write('* The ML model used in this project is :blue[XGB Regressor].')
-        #st.write('* Comparing other regressors, Random Forest Regressor had a high :red[R-squared score], which means it has performed best. ')
 
 
 if selected=="Resale Price":
