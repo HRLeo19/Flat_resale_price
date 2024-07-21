@@ -224,20 +224,16 @@ with st.sidebar:
 if selected=="Home":
     st.title(":rainbow[Singapore Flats Resale Prices Predicting]")
 
-    col1,col2=st.columns(2,gap='large')
-
-    with col1:
-        st.write('## :violet[Problem Statement]')
-        st.write('* The resale flat market in Singapore is highly competitive, and it can be challenging to accurately estimate the resale value of a flat. There are many factors that can affect resale prices, such as location, flat type, floor area, and lease duration.')
-        st.write('* This predictive model will be based on historical data of resale flat transactions, and it aims to assist both potential buyers and sellers in estimating the resale value of a flat.')
-        st.write('## :red[Objective]')
-        st.write('* The objective of this project is to develop a machine learning model and deploy it as a user-friendly web application that predicts the resale prices of flats in Singapore. ')
-
-    with col2:
-        st.write('## Tools and Technologies used')
-        st.write(' Python, Pandas, numpy, matplotlib, seaborn, Streamlit, sklearn')
-        st.write('## :red[ML Model]')
-        st.write('* The ML model used in this project is :blue[XGB Regressor].')
+    st.write('## :violet[Overview]')
+    st.write('#### 👉 The resale flat market in Singapore is highly competitive, and it can be challenging to accurately estimate the resale value of a flat. There are many factors that can affect resale prices, such as location, flat type, floor area, and lease duration.')
+    st.write('#### 👉 The objective of this project is to develop a machine learning model and deploy it as a user-friendly web application that predicts the resale prices of flats in Singapore. ')
+    st.write('#### 👉 This predictive model will be based on historical data of resale flat transactions, and it aims to assist both potential buyers and sellers in estimating the resale value of a flat.')
+    st.write("")
+    st.write('## :red[ML Regression Model]')
+    st.markdown("#### 👉 A Regression Machine Learning model is a type of model used to predict the :green[Continuous outcomes] based on the input data...")
+    st.write("")
+    st.markdown("#### 👉 The Goal of Regression is to establish a relationship between one more independent variables(feautures) and a dependent variable(target) and use this relationship to make the Predictions...")
+    st.write('#### 👉 The ML model used in this project is :blue[XGB Regressor].')
 
 
 if selected=="Resale Price":
